@@ -1,4 +1,3 @@
-import Header from "../components/header"
 import Product from "../components/card"
 import products from "../../data"
 import { Box, SimpleGrid } from "@chakra-ui/react"
@@ -6,7 +5,6 @@ import { Box, SimpleGrid } from "@chakra-ui/react"
 const Home = () => {
   return (
     <>
-      <Header />
       <SimpleGrid minChildWidth="320px">
       {products.map((product) => (
         <Box margin="50px">
