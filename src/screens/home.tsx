@@ -8,7 +8,6 @@ const Home = () => {
       <SimpleGrid minChildWidth="320px">
       {products.map((product) => (
         <Box margin="50px">
-          {console.log(product._id)}
         <Product product={product} key={product._id} />
         </Box>
       ))}
