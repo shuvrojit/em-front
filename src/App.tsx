@@ -1,15 +1,25 @@
-import './App.css'
-import Home from './screens/home'
-import Header from "./components/header"
+import "./App.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Cart from "./components/cart";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./screens/home"
+import Login from "./components/auth/login";
 
 function App() {
-
   return (
     <>
-      <Header />
-      <Home />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
