@@ -1,13 +1,14 @@
 import { Button, Text, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import CartLogo from "../assets/cart.svg"
 
 const Navbar = () => {
   return (
     <>
-      <Flex p="20px">
+      <Flex >
         <Link to="/cart">
         <Button>
-          <Text>Cart</Text>
+          <img src={CartLogo} alt="Cart logo" />
         </Button>
           </Link>
 

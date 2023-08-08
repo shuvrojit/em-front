@@ -1,8 +1,9 @@
+import CartLogo from "../assets/cart.svg"
 
 const Cart = () => {
   return (
     <>
-      <h1>Cart</h1>
+      <img src={CartLogo} alt="Cart logo" />
     </>
   )
 }
