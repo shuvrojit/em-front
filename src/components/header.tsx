@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Flex width={"100vw"} justify={"space-between"}>
+    <Flex width={"100vw"} justify={"space-between"} align={"center"}>
       <Link to="/">
         <Image m={"1rem"} src={EazzlLogo} alt="Eazzl" />
       </Link>
